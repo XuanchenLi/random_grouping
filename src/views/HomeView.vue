@@ -33,20 +33,20 @@
 
           </el-upload>
         </el-col>
-        <el-col span="4">
+        <el-col span="3">
           <span>组数：</span>
           <el-input-number v-model="this.groupNum" :min="1" />
           <span>分组次数：</span>
           <el-input-number v-model="this.groupTime" :min="1" />
         </el-col>
 
-        <el-col span="4">
+        <el-col span="3">
           <el-button type="primary" @click="this.multiRandomGroup($event)">随机分组</el-button>
         </el-col>
-        <el-col span="4">
+        <el-col span="3">
           <el-button type="success" @click="this.data2Excel($event)" :disabled="this.groups.length === 0">导出数据</el-button>
         </el-col>
-        <el-col span="4">
+        <el-col span="3">
           <el-button type="success" @click="this.showGraph($event)">分布图</el-button>
         </el-col>
       </el-row >
